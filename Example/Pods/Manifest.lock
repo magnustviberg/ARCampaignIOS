@@ -1,0 +1,16 @@
+PODS:
+  - ARCampaign (0.1.0)
+
+DEPENDENCIES:
+  - ARCampaign (from `../`)
+
+EXTERNAL SOURCES:
+  ARCampaign:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ARCampaign: eba9e86c049da245e9dbba5eec50f2c1a08c1668
+
+PODFILE CHECKSUM: fad18271dcf3f6514ddf028169d0af90ad51310d
+
+COCOAPODS: 1.4.0

@@ -1,0 +1,6 @@
+framework module ARCampaign {
+  umbrella header "ARCampaign-umbrella.h"
+
+  export *
+  module * { export * }
+}
