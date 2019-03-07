@@ -10,9 +10,9 @@
 		0CC92267361E45FDF81B20FB6413E20D /* Pods-ARCampaign_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA861C24D602470642D9379E01A6B9EF /* Pods-ARCampaign_Tests-dummy.m */; };
 		25F956CDA94A88FA689B0835DCE3EE79 /* Pods-ARCampaign_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5C16085F73753A95AD5665AD08AA834 /* Pods-ARCampaign_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E8C6630583D6E7B83EFC4D8BA6373FD /* Pods-ARCampaign_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A593E10F40B31FBDD90F8BA1F3A855 /* Pods-ARCampaign_Example-dummy.m */; };
+		4B10C2B12231DD8900C352DF /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B10C2B02231DD8900C352DF /* ReplaceMe.swift */; };
 		4C921DCE269E0BE61734ED6A3AD5B280 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		59C7ED7A55DD9CC4A166F027C967F18D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		7523E4E8836930C3D943484D56BB823B /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA36334239BA3630AC9001E97D488D5 /* ReplaceMe.swift */; };
 		80430576C3184FF416F8D5F1CD0A5168 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		B0389B8C6468627BCE2BD38C5EE01455 /* ARCampaign-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C407BAFDC17A1F7EA685BCBEDA9D9933 /* ARCampaign-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BDDB6DB3D32CE0D0047B7640549F85C6 /* Pods-ARCampaign_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 234163B69CE6C1C9557EBAFF465C4318 /* Pods-ARCampaign_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,30 +34,31 @@
 		234163B69CE6C1C9557EBAFF465C4318 /* Pods-ARCampaign_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ARCampaign_Example-umbrella.h"; sourceTree = "<group>"; };
 		27A593E10F40B31FBDD90F8BA1F3A855 /* Pods-ARCampaign_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ARCampaign_Example-dummy.m"; sourceTree = "<group>"; };
 		2C745879B8EF4ECBA64093ADD604C082 /* Pods-ARCampaign_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARCampaign_Example.release.xcconfig"; sourceTree = "<group>"; };
-		386002CF234898DCA1544D0F8119B660 /* Pods_ARCampaign_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ARCampaign_Example.framework; path = "Pods-ARCampaign_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		386002CF234898DCA1544D0F8119B660 /* Pods_ARCampaign_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARCampaign_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5DF85C9F97D458284E44AE65206F61 /* Pods-ARCampaign_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARCampaign_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		3BA36334239BA3630AC9001E97D488D5 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ARCampaign/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		3E4BF17AB28103A206C6F0453C6F953C /* Pods-ARCampaign_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARCampaign_Example-resources.sh"; sourceTree = "<group>"; };
-		42ECCE83A3207D22000FD133D36C1DB3 /* ARCampaign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ARCampaign.framework; path = ARCampaign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42ECCE83A3207D22000FD133D36C1DB3 /* ARCampaign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ARCampaign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B10C2AF2231DD8900C352DF /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		4B10C2B02231DD8900C352DF /* ReplaceMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		4C7E80479CD50FB114C953F51822D6E5 /* Pods-ARCampaign_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARCampaign_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4CD8F093A5F40C5964B0BC08CB0CC3DE /* ARCampaign-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARCampaign-prefix.pch"; sourceTree = "<group>"; };
 		5417BB368DCFBB3F355B8A8CBCB624B9 /* Pods-ARCampaign_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARCampaign_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		72470A6BAF8F9A1683A7AB0404FFD804 /* Pods-ARCampaign_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARCampaign_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		78BD9B9A7AE66D7DED70709DD07618D1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		78BD9B9A7AE66D7DED70709DD07618D1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		818ADCAE88946C57B8148A37D054CA68 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		885B5C131D856CBFB23B7A0B5CABB926 /* Pods-ARCampaign_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ARCampaign_Example.modulemap"; sourceTree = "<group>"; };
 		933C3CB98B3B553079EDEA573A32B529 /* Pods-ARCampaign_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARCampaign_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9868D2F94CD0B6E4029E7E135C61DE39 /* ARCampaign.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARCampaign.xcconfig; sourceTree = "<group>"; };
 		AA861C24D602470642D9379E01A6B9EF /* Pods-ARCampaign_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ARCampaign_Tests-dummy.m"; sourceTree = "<group>"; };
-		AC84C4B1B3713896B6BC0C5590942101 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		AC84C4B1B3713896B6BC0C5590942101 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		BD190D75333EDDCA227A0C7F30B6A942 /* Pods-ARCampaign_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARCampaign_Tests-resources.sh"; sourceTree = "<group>"; };
 		C0BAE9CBFC0746A9740482084D71A5FA /* ARCampaign-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARCampaign-dummy.m"; sourceTree = "<group>"; };
-		C0D90D72A9240811B522B77E446484AD /* ARCampaign.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ARCampaign.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C0D90D72A9240811B522B77E446484AD /* ARCampaign.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ARCampaign.podspec; sourceTree = "<group>"; };
 		C407BAFDC17A1F7EA685BCBEDA9D9933 /* ARCampaign-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARCampaign-umbrella.h"; sourceTree = "<group>"; };
 		D0F1E9ECE00274941DC0EFBFCC8CFC4C /* Pods-ARCampaign_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ARCampaign_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D3426B96588D1B178CB3E17C35601767 /* Pods_ARCampaign_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ARCampaign_Tests.framework; path = "Pods-ARCampaign_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3426B96588D1B178CB3E17C35601767 /* Pods_ARCampaign_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARCampaign_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFA11B3B7BC065E43026766476A837E /* ARCampaign.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ARCampaign.modulemap; sourceTree = "<group>"; };
 		DE6C52D1EAF0F8F01F545F1AE735DB3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3DB0ADB76828209ED6FACB15616536F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,6 +104,16 @@
 				D3426B96588D1B178CB3E17C35601767 /* Pods_ARCampaign_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4B10C2AE2231DD8900C352DF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4B10C2AF2231DD8900C352DF /* .gitkeep */,
+				4B10C2B02231DD8900C352DF /* ReplaceMe.swift */,
+			);
+			name = Classes;
+			path = ARCampaign/Classes;
 			sourceTree = "<group>";
 		};
 		5C6E4AA2D195B22D4D43402D69F90309 /* Support Files */ = {
@@ -169,7 +180,7 @@
 		9E9CF0AB72130311D070AC2659A23E18 /* ARCampaign */ = {
 			isa = PBXGroup;
 			children = (
-				3BA36334239BA3630AC9001E97D488D5 /* ReplaceMe.swift */,
+				4B10C2AE2231DD8900C352DF /* Classes */,
 				BB3CF818EEC461B4385AF66A63E93FC9 /* Pod */,
 				5C6E4AA2D195B22D4D43402D69F90309 /* Support Files */,
 			);
@@ -310,6 +321,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					03FE5DEDE29F95564868EA84FB5F5592 = {
+						LastSwiftMigration = 1010;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -343,8 +359,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B10C2B12231DD8900C352DF /* ReplaceMe.swift in Sources */,
 				F0EC50781A3E446D43EA33CD31AB8DAE /* ARCampaign-dummy.m in Sources */,
-				7523E4E8836930C3D943484D56BB823B /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,7 +505,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -579,7 +595,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
