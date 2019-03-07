@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ARCampaign_Example' do
+  pod 'ARCampaign', :path => '../'
+
+  target 'ARCampaign_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
