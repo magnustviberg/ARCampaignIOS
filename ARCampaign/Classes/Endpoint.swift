@@ -32,7 +32,6 @@ extension Endpoint {
         request.httpBody    = body
         request.httpMethod    = httpMethod.rawValue
         
-        request.addValue(apiKey, forHTTPHeaderField: "API_Key")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         print(request.allHTTPHeaderFields ?? "Could not print the HTTP header fields of the receiver")
         return request

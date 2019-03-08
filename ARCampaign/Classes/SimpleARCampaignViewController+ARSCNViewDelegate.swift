@@ -24,7 +24,7 @@ extension SimpleARCampaignViewController: ARSCNViewDelegate {
             imageHightingAnimationNode.opacity = 1
             imageHightingAnimationNode.setNodeToOccluder()
             
-            guard let model = model else { return }
+            guard let model = model else { fatalError("No Model") }
             
             // create and add a light to the scene
             let lightNode = SCNNode()

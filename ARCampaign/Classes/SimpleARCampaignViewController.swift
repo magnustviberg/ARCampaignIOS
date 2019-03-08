@@ -83,11 +83,10 @@ public class SimpleARCampaignViewController: UIViewController {
     }
     
     private func getModel(from url: URL) -> SCNNode?{
-        //guard let shipScene = try? SCNScene.init(url: url, options: nil) else { return }
+        guard let shipScene = try? SCNScene.init(url: url, options: nil) else { return nil }
         //let modelScene = SCNScene(named: "art.scnassets/trophy.scn")!
-        
         //let shipNode: SCNNode = modelScene.rootNode.childNode(withName: "Cube", recursively: true)!
-        return nil //shipNode //shipScene.rootNode
+        return shipScene.rootNode // shipNode
     }
     
 }

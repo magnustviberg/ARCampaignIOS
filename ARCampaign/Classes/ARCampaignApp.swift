@@ -22,30 +22,34 @@ public class ARCampaignApp {
     static var campaignId: String!
     
     public static func configure() {
-        
         if let url = Bundle.main.url(forResource:"ARCampaignInfo", withExtension: "plist") {
             do {
                 let data = try Data(contentsOf:url)
                 let infoDictionary = try PropertyListSerialization.propertyList(from: data, format: nil) as! [String:Any]
-                
-                // validate bundle ID
-                guard let bundleID = infoDictionary[bundleIdKey] as? String else { return }
-                guard validateBundle(id: bundleID) else { return }
-                print("BUNDLE IS VALID!!")
-                guard let baseUrl = infoDictionary[baseURLKey] as? String else { print("no database url"); fatalError() }
-                databaseURLString = baseUrl
-                print(databaseURLString)
-                guard let apiKey = infoDictionary[apiKey] as? String else { print("no api key"); fatalError() }
-                apiKeyString = apiKey
-                guard let campaignId = infoDictionary[campaignIdKey] as? String else { print("no campaign id"); fatalError() }
+                guard let bundleID = infoDictionary[bundleIdKey] as? String else {
+                    fatalError(ARCampaignError.missingBundle.errorMessage)
+                }
+                guard validateBundle(id: bundleID) else {
+                    fatalError(ARCampaignError.invalidBundle.errorMessage)
+                }
+                guard let baseUrl = infoDictionary[baseURLKey] as? String else {
+                    fatalError(ARCampaignError.missingBaseUrl.errorMessage)
+                }
+                guard let apiKey = infoDictionary[apiKey] as? String else {
+                    fatalError(ARCampaignError.missingAPIKey.errorMessage)
+                }
+                guard let campaignId = infoDictionary[campaignIdKey] as? String else {
+                    fatalError(ARCampaignError.missingCampaignId.errorMessage)
+                }
+                self.databaseURLString = baseUrl
+                self.apiKeyString = apiKey
                 self.campaignId = campaignId
-            } catch {
-                fatalError("Kunne ikke hente data fra ARCampaignInfo.plist")
+            } catch (let error) {
+                fatalError(error.localizedDescription)
             }
         } else {
-            fatalError("Finner ikke ARCampaignInfo.plist")
+            fatalError(ARCampaignError.missingPlist.errorMessage)
         }
-        
     }
     
     static func validateBundle(id: String) -> Bool{
