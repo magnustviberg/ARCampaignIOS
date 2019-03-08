@@ -22,7 +22,7 @@ pod 'ARCampaign'
 
 ## Author
 
-magnustviberg, hei@purpl.no
+Purpl, hei@purpl.no
 
 ## License
 

@@ -21,7 +21,7 @@ public class ARCampaignApp {
     static var databaseURLString: String!
     static var apiKeyString: String!
     
-    static func configure() {
+    public static func configure() {
         
         if let url = Bundle.main.url(forResource:"ARCampaignInfo", withExtension: "plist") {
             do {

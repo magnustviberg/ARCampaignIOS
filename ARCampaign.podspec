@@ -23,11 +23,11 @@ Pod::Spec.new do |s|
 Create Campaigns using AR for iOS apps. Install library into project and easly get models and tracking images from a server.
                        DESC
 
-  s.homepage         = 'https://github.com/magnustviberg/ARCampaignIOS'
+  s.homepage         = 'https://github.com/purplos/ARCampaignIOS'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'magnustviberg' => 'hei@purpl.no' }
-  s.source           = { :git => 'https://github.com/magnustviberg/ARCampaignIOS.git', :tag => s.version.to_s }
+  s.author           = { 'purplos' => 'hei@purpl.no' }
+  s.source           = { :git => 'https://github.com/purplos/ARCampaignIOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.3'
