@@ -10,7 +10,7 @@ import Zip
 
 @available(iOS 12.0, *)
 class SimpleARCampaignViewModel {
-    let campaignManager: CampaignManagerProtocol = MockCampaignManager()
+    let campaignManager: CampaignManagerProtocol = CampaignManager()
     private var campaignInfo: CampaignInfo?
     
     private var fetchImageError: Error?

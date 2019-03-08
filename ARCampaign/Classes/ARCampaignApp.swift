@@ -12,14 +12,14 @@ public class ARCampaignApp {
     static let sharedInstance = ARCampaignApp()
     private init() { }
     
-    static let downloadPlistUrl: String = "https://www.geit.no"
-    static let databaseURLKey: String = "Database URL"
-    static let projectIdKey: String = "Project id"
-    static let bundleIdKey: String = "Bundle id"
-    static let apiKey: String = "API Key"
+    static let baseURLKey: String = "BaseURL"
+    static let campaignIdKey: String = "CampaignID"
+    static let bundleIdKey: String = "BundleID"
+    static let apiKey: String = "APIKey"
     
     static var databaseURLString: String!
     static var apiKeyString: String!
+    static var campaignId: String!
     
     public static func configure() {
         
@@ -32,14 +32,18 @@ public class ARCampaignApp {
                 guard let bundleID = infoDictionary[bundleIdKey] as? String else { return }
                 guard validateBundle(id: bundleID) else { return }
                 print("BUNDLE IS VALID!!")
-                guard let baseUrl = infoDictionary[databaseURLKey] as? String else { print("no database url"); return }
+                guard let baseUrl = infoDictionary[baseURLKey] as? String else { print("no database url"); fatalError() }
                 databaseURLString = baseUrl
                 print(databaseURLString)
-                guard let apiKey = infoDictionary[apiKey] as? String else { print("no api key"); return }
+                guard let apiKey = infoDictionary[apiKey] as? String else { print("no api key"); fatalError() }
                 apiKeyString = apiKey
+                guard let campaignId = infoDictionary[campaignIdKey] as? String else { print("no campaign id"); fatalError() }
+                self.campaignId = campaignId
             } catch {
-                print(error)
+                fatalError("Kunne ikke hente data fra ARCampaignInfo.plist")
             }
+        } else {
+            fatalError("Finner ikke ARCampaignInfo.plist")
         }
         
     }

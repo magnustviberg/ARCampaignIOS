@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1393A0C327D90DB3EFAF6B88 /* Pods_ARCampaign_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE7A89BB7D6149A301A894A /* Pods_ARCampaign_Example.framework */; };
+		4B10C2F5223266D300C352DF /* ARCampaign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B10C2F4223266D300C352DF /* ARCampaign.framework */; };
+		4B10C2F7223266D300C352DF /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B10C2F6223266D300C352DF /* Zip.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 		1CE7A89BB7D6149A301A894A /* Pods_ARCampaign_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARCampaign_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D37CA48AC16E750FF6B2D75 /* Pods-ARCampaign_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARCampaign_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARCampaign_Example/Pods-ARCampaign_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4267BF7D49E95EB8B8F64616 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4B10C2F4223266D300C352DF /* ARCampaign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ARCampaign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B10C2F6223266D300C352DF /* Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* ARCampaign_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARCampaign_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B10C2F5223266D300C352DF /* ARCampaign.framework in Frameworks */,
+				4B10C2F7223266D300C352DF /* Zip.framework in Frameworks */,
 				1393A0C327D90DB3EFAF6B88 /* Pods_ARCampaign_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +89,8 @@
 		5354B0964596CE200C4BFF2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B10C2F4223266D300C352DF /* ARCampaign.framework */,
+				4B10C2F6223266D300C352DF /* Zip.framework */,
 				1CE7A89BB7D6149A301A894A /* Pods_ARCampaign_Example.framework */,
 				AB70C653B299B7178621ECDB /* Pods_ARCampaign_Tests.framework */,
 			);

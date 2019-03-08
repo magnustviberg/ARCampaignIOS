@@ -12,7 +12,7 @@ public struct TrackingImageResponse {
     var width: Float32
     
     enum CodingKeys: String, CodingKey {
-        case url = "imageUrl"
+        case url = "imageURL"
         case width
     }
 }

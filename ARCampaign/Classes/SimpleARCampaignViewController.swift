@@ -13,7 +13,11 @@ import ARKit
 @available(iOS 12.0, *)
 public class SimpleARCampaignViewController: UIViewController {
     
-    @IBOutlet var sceneView: ARSCNView!
+    lazy var sceneView: ARSCNView = {
+        let view = ARSCNView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
     
     var model: SCNNode?
     private var modelUrl: URL?
@@ -24,6 +28,7 @@ public class SimpleARCampaignViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         sceneView.delegate = self
+        setupViews()
     }
     
     public override func viewWillAppear(_ animated: Bool) {
@@ -53,6 +58,16 @@ public class SimpleARCampaignViewController: UIViewController {
         }
     }
     
+    func setupViews() {
+        self.view.addSubview(sceneView)
+        NSLayoutConstraint.activate([
+            sceneView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            sceneView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            sceneView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            sceneView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+        ])
+    }
+    
     public override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         // Pause the view's session
@@ -69,11 +84,10 @@ public class SimpleARCampaignViewController: UIViewController {
     
     private func getModel(from url: URL) -> SCNNode?{
         //guard let shipScene = try? SCNScene.init(url: url, options: nil) else { return }
-        let modelScene = SCNScene(named:
-            "art.scnassets/trophy.scn")!
+        //let modelScene = SCNScene(named: "art.scnassets/trophy.scn")!
         
-        let shipNode: SCNNode = modelScene.rootNode.childNode(withName: "Cube", recursively: true)!
-        return shipNode //shipScene.rootNode
+        //let shipNode: SCNNode = modelScene.rootNode.childNode(withName: "Cube", recursively: true)!
+        return nil //shipNode //shipScene.rootNode
     }
     
 }
