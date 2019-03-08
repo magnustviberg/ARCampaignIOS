@@ -1,16 +1,20 @@
 PODS:
-  - ARCampaign (0.1.0)
+  - ARCampaign (0.1.0):
+    - Zip (~> 1.1)
+  - Zip (1.1.0)
 
 DEPENDENCIES:
   - ARCampaign (from `../`)
+  - Zip (~> 1.1)
 
 EXTERNAL SOURCES:
   ARCampaign:
     :path: ../
 
 SPEC CHECKSUMS:
-  ARCampaign: eba9e86c049da245e9dbba5eec50f2c1a08c1668
+  ARCampaign: 072b2daf0641a0107e840d8ed08f51d8c3e84080
+  Zip: 8877eede3dda76bcac281225c20e71c25270774c
 
-PODFILE CHECKSUM: fad18271dcf3f6514ddf028169d0af90ad51310d
+PODFILE CHECKSUM: abdd1d7849e5786075e4f90257b46c4d3fe10f2b
 
 COCOAPODS: 1.4.0

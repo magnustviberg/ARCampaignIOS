@@ -11,6 +11,8 @@ Pod::Spec.new do |s|
   s.version          = '0.1.0'
   s.summary          = 'Create Campaigns using AR for iOS'
 
+  s.swift_version    = '4.2'
+
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
@@ -28,7 +30,7 @@ Create Campaigns using AR for iOS apps. Install library into project and easly g
   s.source           = { :git => 'https://github.com/magnustviberg/ARCampaignIOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.3'
 
   s.source_files = 'ARCampaign/Classes/**/*'
   

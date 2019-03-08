@@ -1,9 +1,10 @@
 {
   "name": "ARCampaign",
   "version": "0.1.0",
-  "summary": "A short description of ARCampaign.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/magnustviberg/ARCampaign",
+  "summary": "Create Campaigns using AR for iOS",
+  "swift_version": "4.2",
+  "description": "Create Campaigns using AR for iOS apps. Install library into project and easly get models and tracking images from a server.",
+  "homepage": "https://github.com/magnustviberg/ARCampaignIOS",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +13,20 @@
     "magnustviberg": "hei@purpl.no"
   },
   "source": {
-    "git": "https://github.com/magnustviberg/ARCampaign.git",
+    "git": "https://github.com/magnustviberg/ARCampaignIOS.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "11.3"
   },
-  "source_files": "ARCampaign/Classes/**/*"
+  "source_files": "ARCampaign/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "ARKit"
+  ],
+  "dependencies": {
+    "Zip": [
+      "~> 1.1"
+    ]
+  }
 }

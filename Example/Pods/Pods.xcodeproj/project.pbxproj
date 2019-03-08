@@ -7,81 +7,171 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0975AB6A5924B1A03FA50DD3F899CE9F /* CampaignEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06801E3E391013B48FCAF344AEC86B70 /* CampaignEndpoint.swift */; };
+		0CB5E44A8CD6ACD2F3BA3BFCD06460E9 /* ARCampaign-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9B3918ED1750C990327FA2D18ECC79 /* ARCampaign-dummy.m */; };
 		0CC92267361E45FDF81B20FB6413E20D /* Pods-ARCampaign_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA861C24D602470642D9379E01A6B9EF /* Pods-ARCampaign_Tests-dummy.m */; };
+		0EFD81253358B5CE634C00EDDA2EECCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50563740C09047AA59D7726D17D2B3B /* Foundation.framework */; };
+		1A62896D77498A15219BDDFC8D5C91B3 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 61D62AA3B7A92122BD10FC08B6FADDA9 /* zip.c */; };
+		1D2AEE9041D4028B808B5408B0C5200A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F250D55EF1ABE26FB18F905E5E3F30D /* Endpoint.swift */; };
 		25F956CDA94A88FA689B0835DCE3EE79 /* Pods-ARCampaign_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5C16085F73753A95AD5665AD08AA834 /* Pods-ARCampaign_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E8C6630583D6E7B83EFC4D8BA6373FD /* Pods-ARCampaign_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A593E10F40B31FBDD90F8BA1F3A855 /* Pods-ARCampaign_Example-dummy.m */; };
-		4B10C2B12231DD8900C352DF /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B10C2B02231DD8900C352DF /* ReplaceMe.swift */; };
-		4C921DCE269E0BE61734ED6A3AD5B280 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		59C7ED7A55DD9CC4A166F027C967F18D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		80430576C3184FF416F8D5F1CD0A5168 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		B0389B8C6468627BCE2BD38C5EE01455 /* ARCampaign-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C407BAFDC17A1F7EA685BCBEDA9D9933 /* ARCampaign-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDDB6DB3D32CE0D0047B7640549F85C6 /* Pods-ARCampaign_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 234163B69CE6C1C9557EBAFF465C4318 /* Pods-ARCampaign_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F0EC50781A3E446D43EA33CD31AB8DAE /* ARCampaign-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BAE9CBFC0746A9740482084D71A5FA /* ARCampaign-dummy.m */; };
+		280B2534AB7D17CB735A8ACF02907A33 /* QuickZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A375FC62CD45C78E9120AFCE3EE5E /* QuickZip.swift */; };
+		2A04086E13FFCF6F18BFA0AF9C54F466 /* Zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 99B22C5171A45F58DFF85E51A343620C /* Zip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		330A223018254EF5A52B6B6FCBB2EA98 /* Pods-ARCampaign_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A593E10F40B31FBDD90F8BA1F3A855 /* Pods-ARCampaign_Example-dummy.m */; };
+		4341673AD3892508F7EB92E4C56AFB53 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1530415A5F306CD70B3836ECA3FA98E /* ARKit.framework */; };
+		47E65C78385343266A352365A5020E29 /* ARCampaignError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214749C2A07815CD4E711BC8DB9261DA /* ARCampaignError.swift */; };
+		59C525CE74E90351A63FF63F54D64C79 /* SimpleARCampaignViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8B6D89F0EA80B2BD82E39C776C4F1A /* SimpleARCampaignViewController+ARSCNViewDelegate.swift */; };
+		5B83479C2F99204BC17BACD9F953A196 /* TrackingImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE0C931573DDF9D88D79DC2FBA6200 /* TrackingImageResponse.swift */; };
+		6741BAF63A2EA4F1CAD07AE9AD148E5E /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = F93371BCFC6F7AC0C89752E99B0C343C /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		68EC028AFEAB310D81D7B294AF7AB0D3 /* ZipUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3D3E640D9C6A79C01913CE8076B8E4 /* ZipUtilities.swift */; };
+		6C8F71604AABD1BF97BDDFD9B52EA002 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EAC7C5A50CAB6A8CE4AA14D66908D05 /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		704ABF429E530B79D65AFE7AEEA6FBA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50563740C09047AA59D7726D17D2B3B /* Foundation.framework */; };
+		72C398B4BC42EF4B343B1D2530CE86C3 /* Zip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 281B80DB04F8E3C20B56299A7FC32180 /* Zip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		754B726FC373D73151021CD87FB5A808 /* ARCampaign-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 633771837A2D3C8BFB66EDBC03EFD8A5 /* ARCampaign-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76A51EFD8A67C15684CA6D67F2E85BF8 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B13DB072439FDF5128F8D544DE850AD /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		80430576C3184FF416F8D5F1CD0A5168 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50563740C09047AA59D7726D17D2B3B /* Foundation.framework */; };
+		8581BF3A560FB1CCF69AFB0DD5A9E9BD /* Pods-ARCampaign_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 234163B69CE6C1C9557EBAFF465C4318 /* Pods-ARCampaign_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87A9D0678888BE1A65383CC52CCCC94E /* SimpleARCampaignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F9136E511FD414A983920A3E4547D6 /* SimpleARCampaignViewController.swift */; };
+		894BE627F0FC99F96D342D94D4D32EC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50563740C09047AA59D7726D17D2B3B /* Foundation.framework */; };
+		9202A5C3C52E134F5089B6BDBD1794A8 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CA62998337DD95D8FEF7DD0271D249 /* HTTPMethod.swift */; };
+		9C76B3D1067A1287B679EF97EB1F4E6C /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C8156F61FEA5C6DABB1A1EC34388363 /* ioapi.c */; };
+		A3D935CF2670065738A04560465D3E9D /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 75B5DDD68C50DA423D1B40FAE5390AEF /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A56D0BACAA64E9F8289FA5F61E041B59 /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B10A75B71F330BBCE507C22D76FB887 /* Zip.framework */; };
+		ACEA26A5634C9425455CCDA5945C1B89 /* MockCampaignManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF1F6B9B76C3AF8C37A140FF158479B /* MockCampaignManager.swift */; };
+		B8F3556F7D087C5A8989F0041F1867F4 /* Zip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA5909677A6245EB5781459CAD561E /* Zip-dummy.m */; };
+		C1511C11519F073F8D7ADD800B0CC997 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 91C8FA87F1D212BD069F6EB81200E3E2 /* unzip.c */; };
+		D0D156F968BEA97856A3E2B5FE486586 /* CampaignManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BFA7AA99ABA2433E2FFDAEEB108521 /* CampaignManager.swift */; };
+		D2FB5D2059D4DB652F346C14F1283548 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF789AD4EAD6F8A05B8C700984FAC58 /* WebService.swift */; };
+		D7FBC5F29B804F2823A9E0730CAFCCB9 /* HTTPResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2296F9723A0F203C04EEFD8A13264B /* HTTPResponseError.swift */; };
+		DABE63FF23C525338FDAF6987CFD3268 /* SimpleARCampaignViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6305A6D6A2DCFFF253712063F0E2D744 /* SimpleARCampaignViewModel.swift */; };
+		E6F0A4D60B560A2C6322A79BC154D964 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E4EC11BC1F51C7228C6316B18A1729 /* UIKit.framework */; };
+		E809EBD9F395E3909028A6B150D27C6B /* SCNNode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF06B0CB71FE4C7C9EC2CBB08F3FCAB /* SCNNode+Extension.swift */; };
+		F33288901A3D399595D8A5999768836D /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0E85F4DEB9F4C652B7E69791951F81 /* Zip.swift */; };
+		FB06CE264865ADE158562D756CCF642F /* ARCampaignApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFC73B0D1026B23175AD34DCA00FCB /* ARCampaignApp.swift */; };
+		FB69E01C7BC14FC41BCCD6EB83EE643A /* SCNMaterial+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500E66D78722297A5F9E212E84C9BEEE /* SCNMaterial+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C195959E884F98367CF96817AE2D6AD4 /* PBXContainerItemProxy */ = {
+		0BDC801365D669252DEA4F9BB12ECDD3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 03FE5DEDE29F95564868EA84FB5F5592;
+			remoteGlobalIDString = DD15931B5A41E796944C959D62F70B1C;
+			remoteInfo = Zip;
+		};
+		1AF7DAA9A21DAC3F5E208065E0FF6723 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 895CEB5171A1ACF18E703563FB97CFA1;
 			remoteInfo = ARCampaign;
+		};
+		A36EA5ADFF4C869B2806A22E876C101B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD15931B5A41E796944C959D62F70B1C;
+			remoteInfo = Zip;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		005E5671C0D46C400B962CA7CD151AD9 /* Pods-ARCampaign_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARCampaign_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		06801E3E391013B48FCAF344AEC86B70 /* CampaignEndpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CampaignEndpoint.swift; path = ARCampaign/Classes/CampaignEndpoint.swift; sourceTree = "<group>"; };
+		0CB179CE38BCB7D06E86D648A6ABA12D /* ARCampaign-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARCampaign-prefix.pch"; sourceTree = "<group>"; };
+		0E3D3E640D9C6A79C01913CE8076B8E4 /* ZipUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipUtilities.swift; path = Zip/ZipUtilities.swift; sourceTree = "<group>"; };
+		20C8E67DE62DADC12CE844F4A0657F32 /* Pods_ARCampaign_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ARCampaign_Tests.framework; path = "Pods-ARCampaign_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		214749C2A07815CD4E711BC8DB9261DA /* ARCampaignError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ARCampaignError.swift; path = ARCampaign/Classes/ARCampaignError.swift; sourceTree = "<group>"; };
 		234163B69CE6C1C9557EBAFF465C4318 /* Pods-ARCampaign_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ARCampaign_Example-umbrella.h"; sourceTree = "<group>"; };
 		27A593E10F40B31FBDD90F8BA1F3A855 /* Pods-ARCampaign_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ARCampaign_Example-dummy.m"; sourceTree = "<group>"; };
+		281B80DB04F8E3C20B56299A7FC32180 /* Zip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-umbrella.h"; sourceTree = "<group>"; };
+		2C3A375FC62CD45C78E9120AFCE3EE5E /* QuickZip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickZip.swift; path = Zip/QuickZip.swift; sourceTree = "<group>"; };
 		2C745879B8EF4ECBA64093ADD604C082 /* Pods-ARCampaign_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARCampaign_Example.release.xcconfig"; sourceTree = "<group>"; };
-		386002CF234898DCA1544D0F8119B660 /* Pods_ARCampaign_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARCampaign_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5DF85C9F97D458284E44AE65206F61 /* Pods-ARCampaign_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARCampaign_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		3C8156F61FEA5C6DABB1A1EC34388363 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = Zip/minizip/ioapi.c; sourceTree = "<group>"; };
 		3E4BF17AB28103A206C6F0453C6F953C /* Pods-ARCampaign_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARCampaign_Example-resources.sh"; sourceTree = "<group>"; };
-		42ECCE83A3207D22000FD133D36C1DB3 /* ARCampaign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ARCampaign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B10C2AF2231DD8900C352DF /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		4B10C2B02231DD8900C352DF /* ReplaceMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		3F250D55EF1ABE26FB18F905E5E3F30D /* Endpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endpoint.swift; path = ARCampaign/Classes/Endpoint.swift; sourceTree = "<group>"; };
+		42F7F96FB856AD9E1875BB17DF102A02 /* ARCampaign.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ARCampaign.modulemap; sourceTree = "<group>"; };
+		4B10A75B71F330BBCE507C22D76FB887 /* Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7E80479CD50FB114C953F51822D6E5 /* Pods-ARCampaign_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARCampaign_Example-frameworks.sh"; sourceTree = "<group>"; };
-		4CD8F093A5F40C5964B0BC08CB0CC3DE /* ARCampaign-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARCampaign-prefix.pch"; sourceTree = "<group>"; };
+		4CBA5909677A6245EB5781459CAD561E /* Zip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zip-dummy.m"; sourceTree = "<group>"; };
+		500E66D78722297A5F9E212E84C9BEEE /* SCNMaterial+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SCNMaterial+Extension.swift"; path = "ARCampaign/Classes/SCNMaterial+Extension.swift"; sourceTree = "<group>"; };
+		533DC15262DF1BEB49E683D040C305CE /* Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Zip.framework; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5417BB368DCFBB3F355B8A8CBCB624B9 /* Pods-ARCampaign_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARCampaign_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		549A2945C3112125C1D5B15DF257845C /* Pods_ARCampaign_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ARCampaign_Example.framework; path = "Pods-ARCampaign_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61D62AA3B7A92122BD10FC08B6FADDA9 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = Zip/minizip/zip.c; sourceTree = "<group>"; };
+		6305A6D6A2DCFFF253712063F0E2D744 /* SimpleARCampaignViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleARCampaignViewModel.swift; path = ARCampaign/Classes/SimpleARCampaignViewModel.swift; sourceTree = "<group>"; };
+		633771837A2D3C8BFB66EDBC03EFD8A5 /* ARCampaign-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARCampaign-umbrella.h"; sourceTree = "<group>"; };
+		6C0E85F4DEB9F4C652B7E69791951F81 /* Zip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zip.swift; path = Zip/Zip.swift; sourceTree = "<group>"; };
+		6CFFC73B0D1026B23175AD34DCA00FCB /* ARCampaignApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ARCampaignApp.swift; path = ARCampaign/Classes/ARCampaignApp.swift; sourceTree = "<group>"; };
+		6EDE0C931573DDF9D88D79DC2FBA6200 /* TrackingImageResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrackingImageResponse.swift; path = ARCampaign/Classes/TrackingImageResponse.swift; sourceTree = "<group>"; };
 		72470A6BAF8F9A1683A7AB0404FFD804 /* Pods-ARCampaign_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARCampaign_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		78BD9B9A7AE66D7DED70709DD07618D1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		818ADCAE88946C57B8148A37D054CA68 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73F9136E511FD414A983920A3E4547D6 /* SimpleARCampaignViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleARCampaignViewController.swift; path = ARCampaign/Classes/SimpleARCampaignViewController.swift; sourceTree = "<group>"; };
+		75B5DDD68C50DA423D1B40FAE5390AEF /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = Zip/minizip/crypt.h; sourceTree = "<group>"; };
+		7B0B39F1223070BDBC12869283D22678 /* ARCampaign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ARCampaign.framework; path = ARCampaign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B13DB072439FDF5128F8D544DE850AD /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = Zip/minizip/zip.h; sourceTree = "<group>"; };
+		7EAC7C5A50CAB6A8CE4AA14D66908D05 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = Zip/minizip/ioapi.h; sourceTree = "<group>"; };
+		826481B4B329D4FB0DC61FD144225805 /* ARCampaign.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ARCampaign.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		885B5C131D856CBFB23B7A0B5CABB926 /* Pods-ARCampaign_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ARCampaign_Example.modulemap"; sourceTree = "<group>"; };
+		8D8B6D89F0EA80B2BD82E39C776C4F1A /* SimpleARCampaignViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SimpleARCampaignViewController+ARSCNViewDelegate.swift"; path = "ARCampaign/Classes/SimpleARCampaignViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		91C8FA87F1D212BD069F6EB81200E3E2 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = Zip/minizip/unzip.c; sourceTree = "<group>"; };
 		933C3CB98B3B553079EDEA573A32B529 /* Pods-ARCampaign_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARCampaign_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9868D2F94CD0B6E4029E7E135C61DE39 /* ARCampaign.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARCampaign.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		949D2FCD9DBD209E6EB41E5A7E7122EA /* ARCampaign.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARCampaign.xcconfig; sourceTree = "<group>"; };
+		99B22C5171A45F58DFF85E51A343620C /* Zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Zip.h; path = Zip/Zip.h; sourceTree = "<group>"; };
+		9ECA36904BF20E6DBA229818F1A3F67E /* Zip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zip.xcconfig; sourceTree = "<group>"; };
+		9EF789AD4EAD6F8A05B8C700984FAC58 /* WebService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebService.swift; path = ARCampaign/Classes/WebService.swift; sourceTree = "<group>"; };
+		A71ACB158BC4EBA4C8D11CD78309FC74 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA861C24D602470642D9379E01A6B9EF /* Pods-ARCampaign_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ARCampaign_Tests-dummy.m"; sourceTree = "<group>"; };
-		AC84C4B1B3713896B6BC0C5590942101 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		ABF1F6B9B76C3AF8C37A140FF158479B /* MockCampaignManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MockCampaignManager.swift; path = ARCampaign/Classes/MockCampaignManager.swift; sourceTree = "<group>"; };
+		ADAB72AEF3262808C6BC0DAD72997DF9 /* Zip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Zip.modulemap; sourceTree = "<group>"; };
+		AED8EDB7A15B1FDAB7960B033578FA7A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		AF226678B3BE1D5303F8D11ECF4CA142 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		BD190D75333EDDCA227A0C7F30B6A942 /* Pods-ARCampaign_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARCampaign_Tests-resources.sh"; sourceTree = "<group>"; };
-		C0BAE9CBFC0746A9740482084D71A5FA /* ARCampaign-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARCampaign-dummy.m"; sourceTree = "<group>"; };
-		C0D90D72A9240811B522B77E446484AD /* ARCampaign.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ARCampaign.podspec; sourceTree = "<group>"; };
-		C407BAFDC17A1F7EA685BCBEDA9D9933 /* ARCampaign-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARCampaign-umbrella.h"; sourceTree = "<group>"; };
+		BFF06B0CB71FE4C7C9EC2CBB08F3FCAB /* SCNNode+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SCNNode+Extension.swift"; path = "ARCampaign/Classes/SCNNode+Extension.swift"; sourceTree = "<group>"; };
+		CC9CE18C797D69AF31048B6E586E291D /* Zip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-prefix.pch"; sourceTree = "<group>"; };
 		D0F1E9ECE00274941DC0EFBFCC8CFC4C /* Pods-ARCampaign_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ARCampaign_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D3426B96588D1B178CB3E17C35601767 /* Pods_ARCampaign_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARCampaign_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCFA11B3B7BC065E43026766476A837E /* ARCampaign.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ARCampaign.modulemap; sourceTree = "<group>"; };
+		D4BFA7AA99ABA2433E2FFDAEEB108521 /* CampaignManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CampaignManager.swift; path = ARCampaign/Classes/CampaignManager.swift; sourceTree = "<group>"; };
+		D83B7FE34FFE63A09B1BDA28D0EAFE53 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE6C52D1EAF0F8F01F545F1AE735DB3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1530415A5F306CD70B3836ECA3FA98E /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/ARKit.framework; sourceTree = DEVELOPER_DIR; };
 		E3DB0ADB76828209ED6FACB15616536F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4E4EC11BC1F51C7228C6316B18A1729 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E50563740C09047AA59D7726D17D2B3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E5C16085F73753A95AD5665AD08AA834 /* Pods-ARCampaign_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ARCampaign_Tests-umbrella.h"; sourceTree = "<group>"; };
 		E6D22EB57FDD00B1F94832AD30A4A13C /* Pods-ARCampaign_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARCampaign_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		EDB004BC1E01ABCD37E564E378BB6137 /* Pods-ARCampaign_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ARCampaign_Tests.modulemap"; sourceTree = "<group>"; };
+		F3CA62998337DD95D8FEF7DD0271D249 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = ARCampaign/Classes/HTTPMethod.swift; sourceTree = "<group>"; };
+		F93371BCFC6F7AC0C89752E99B0C343C /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = Zip/minizip/unzip.h; sourceTree = "<group>"; };
+		FB9B3918ED1750C990327FA2D18ECC79 /* ARCampaign-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARCampaign-dummy.m"; sourceTree = "<group>"; };
+		FE2296F9723A0F203C04EEFD8A13264B /* HTTPResponseError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPResponseError.swift; path = ARCampaign/Classes/HTTPResponseError.swift; sourceTree = "<group>"; };
 		FE8C2CFE9A50224F2C4D41E06FCF5C51 /* Pods-ARCampaign_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ARCampaign_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A7D964B5D25F3419E27DECF3E1C72120 /* Frameworks */ = {
+		5254D954B8BAFC3432C967C8174F4134 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C921DCE269E0BE61734ED6A3AD5B280 /* Foundation.framework in Frameworks */,
+				704ABF429E530B79D65AFE7AEEA6FBA0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1176550DF7C4A6A93C0391B82E0BDAD /* Frameworks */ = {
+		718B08D54AA9A81B611E905B81D1411A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59C7ED7A55DD9CC4A166F027C967F18D /* Foundation.framework in Frameworks */,
+				894BE627F0FC99F96D342D94D4D32EC2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D4F8925D0F80AC50A24A09DE137066C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4341673AD3892508F7EB92E4C56AFB53 /* ARKit.framework in Frameworks */,
+				0EFD81253358B5CE634C00EDDA2EECCB /* Foundation.framework in Frameworks */,
+				E6F0A4D60B560A2C6322A79BC154D964 /* UIKit.framework in Frameworks */,
+				A56D0BACAA64E9F8289FA5F61E041B59 /* Zip.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,40 +186,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07BF96203E0C0B10BA58BAD10EE8547D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				42ECCE83A3207D22000FD133D36C1DB3 /* ARCampaign.framework */,
-				386002CF234898DCA1544D0F8119B660 /* Pods_ARCampaign_Example.framework */,
-				D3426B96588D1B178CB3E17C35601767 /* Pods_ARCampaign_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		4B10C2AE2231DD8900C352DF /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				4B10C2AF2231DD8900C352DF /* .gitkeep */,
-				4B10C2B02231DD8900C352DF /* ReplaceMe.swift */,
-			);
-			name = Classes;
-			path = ARCampaign/Classes;
-			sourceTree = "<group>";
-		};
-		5C6E4AA2D195B22D4D43402D69F90309 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DCFA11B3B7BC065E43026766476A837E /* ARCampaign.modulemap */,
-				9868D2F94CD0B6E4029E7E135C61DE39 /* ARCampaign.xcconfig */,
-				C0BAE9CBFC0746A9740482084D71A5FA /* ARCampaign-dummy.m */,
-				4CD8F093A5F40C5964B0BC08CB0CC3DE /* ARCampaign-prefix.pch */,
-				C407BAFDC17A1F7EA685BCBEDA9D9933 /* ARCampaign-umbrella.h */,
-				818ADCAE88946C57B8148A37D054CA68 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ARCampaign";
-			sourceTree = "<group>";
-		};
 		6F101B946EC7292D4099BCCE2D430C63 /* Pods-ARCampaign_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,11 +208,20 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				F5821C1AC9CECCE7A86A5825611973DB /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				07BF96203E0C0B10BA58BAD10EE8547D /* Products */,
+				82975549CCD84EF3202C84531A7AD258 /* Development Pods */,
+				D770E39E024225CD0983561811469A91 /* Frameworks */,
+				E104CD8A37556B4A21987E8A7CA5A000 /* Pods */,
+				BED314C6423ADE03BCFE4A8BDB0364EB /* Products */,
 				C7B0DE4B0FADD425397C4C272FC3C874 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		82975549CCD84EF3202C84531A7AD258 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BCB5E010D018986F447625478AD606D /* ARCampaign */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		8711C6BC21EBDAAD7C8B48FA229DB788 /* Pods-ARCampaign_Tests */ = {
@@ -177,33 +242,64 @@
 			path = "Target Support Files/Pods-ARCampaign_Tests";
 			sourceTree = "<group>";
 		};
-		9E9CF0AB72130311D070AC2659A23E18 /* ARCampaign */ = {
+		8BCB5E010D018986F447625478AD606D /* ARCampaign */ = {
 			isa = PBXGroup;
 			children = (
-				4B10C2AE2231DD8900C352DF /* Classes */,
-				BB3CF818EEC461B4385AF66A63E93FC9 /* Pod */,
-				5C6E4AA2D195B22D4D43402D69F90309 /* Support Files */,
+				6CFFC73B0D1026B23175AD34DCA00FCB /* ARCampaignApp.swift */,
+				214749C2A07815CD4E711BC8DB9261DA /* ARCampaignError.swift */,
+				06801E3E391013B48FCAF344AEC86B70 /* CampaignEndpoint.swift */,
+				D4BFA7AA99ABA2433E2FFDAEEB108521 /* CampaignManager.swift */,
+				3F250D55EF1ABE26FB18F905E5E3F30D /* Endpoint.swift */,
+				F3CA62998337DD95D8FEF7DD0271D249 /* HTTPMethod.swift */,
+				FE2296F9723A0F203C04EEFD8A13264B /* HTTPResponseError.swift */,
+				ABF1F6B9B76C3AF8C37A140FF158479B /* MockCampaignManager.swift */,
+				500E66D78722297A5F9E212E84C9BEEE /* SCNMaterial+Extension.swift */,
+				BFF06B0CB71FE4C7C9EC2CBB08F3FCAB /* SCNNode+Extension.swift */,
+				73F9136E511FD414A983920A3E4547D6 /* SimpleARCampaignViewController.swift */,
+				8D8B6D89F0EA80B2BD82E39C776C4F1A /* SimpleARCampaignViewController+ARSCNViewDelegate.swift */,
+				6305A6D6A2DCFFF253712063F0E2D744 /* SimpleARCampaignViewModel.swift */,
+				6EDE0C931573DDF9D88D79DC2FBA6200 /* TrackingImageResponse.swift */,
+				9EF789AD4EAD6F8A05B8C700984FAC58 /* WebService.swift */,
+				B69E5591B62CA28BD83E4C21342989BE /* Pod */,
+				E852262396688CAD44D85C5ECF4CC521 /* Support Files */,
 			);
 			name = ARCampaign;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		BB3CF818EEC461B4385AF66A63E93FC9 /* Pod */ = {
+		B3E6F71E572ED4594EBD07CBA5A1DD1E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C0D90D72A9240811B522B77E446484AD /* ARCampaign.podspec */,
-				AC84C4B1B3713896B6BC0C5590942101 /* LICENSE */,
-				78BD9B9A7AE66D7DED70709DD07618D1 /* README.md */,
+				D83B7FE34FFE63A09B1BDA28D0EAFE53 /* Info.plist */,
+				ADAB72AEF3262808C6BC0DAD72997DF9 /* Zip.modulemap */,
+				9ECA36904BF20E6DBA229818F1A3F67E /* Zip.xcconfig */,
+				4CBA5909677A6245EB5781459CAD561E /* Zip-dummy.m */,
+				CC9CE18C797D69AF31048B6E586E291D /* Zip-prefix.pch */,
+				281B80DB04F8E3C20B56299A7FC32180 /* Zip-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Zip";
+			sourceTree = "<group>";
+		};
+		B69E5591B62CA28BD83E4C21342989BE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				826481B4B329D4FB0DC61FD144225805 /* ARCampaign.podspec */,
+				AF226678B3BE1D5303F8D11ECF4CA142 /* LICENSE */,
+				AED8EDB7A15B1FDAB7960B033578FA7A /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		BED314C6423ADE03BCFE4A8BDB0364EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				7B0B39F1223070BDBC12869283D22678 /* ARCampaign.framework */,
+				549A2945C3112125C1D5B15DF257845C /* Pods_ARCampaign_Example.framework */,
+				20C8E67DE62DADC12CE844F4A0657F32 /* Pods_ARCampaign_Tests.framework */,
+				533DC15262DF1BEB49E683D040C305CE /* Zip.framework */,
 			);
-			name = Frameworks;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		C7B0DE4B0FADD425397C4C272FC3C874 /* Targets Support Files */ = {
@@ -215,30 +311,75 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		D770E39E024225CD0983561811469A91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				4B10A75B71F330BBCE507C22D76FB887 /* Zip.framework */,
+				F3FB7EC3CF15483652A74B60AC16434A /* iOS */,
 			);
-			name = iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F5821C1AC9CECCE7A86A5825611973DB /* Development Pods */ = {
+		E104CD8A37556B4A21987E8A7CA5A000 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9E9CF0AB72130311D070AC2659A23E18 /* ARCampaign */,
+				E6B4247B49DF5C283445C0E26BFD1D86 /* Zip */,
 			);
-			name = "Development Pods";
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E6B4247B49DF5C283445C0E26BFD1D86 /* Zip */ = {
+			isa = PBXGroup;
+			children = (
+				75B5DDD68C50DA423D1B40FAE5390AEF /* crypt.h */,
+				3C8156F61FEA5C6DABB1A1EC34388363 /* ioapi.c */,
+				7EAC7C5A50CAB6A8CE4AA14D66908D05 /* ioapi.h */,
+				2C3A375FC62CD45C78E9120AFCE3EE5E /* QuickZip.swift */,
+				91C8FA87F1D212BD069F6EB81200E3E2 /* unzip.c */,
+				F93371BCFC6F7AC0C89752E99B0C343C /* unzip.h */,
+				61D62AA3B7A92122BD10FC08B6FADDA9 /* zip.c */,
+				7B13DB072439FDF5128F8D544DE850AD /* zip.h */,
+				99B22C5171A45F58DFF85E51A343620C /* Zip.h */,
+				6C0E85F4DEB9F4C652B7E69791951F81 /* Zip.swift */,
+				0E3D3E640D9C6A79C01913CE8076B8E4 /* ZipUtilities.swift */,
+				B3E6F71E572ED4594EBD07CBA5A1DD1E /* Support Files */,
+			);
+			name = Zip;
+			path = Zip;
+			sourceTree = "<group>";
+		};
+		E852262396688CAD44D85C5ECF4CC521 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				42F7F96FB856AD9E1875BB17DF102A02 /* ARCampaign.modulemap */,
+				949D2FCD9DBD209E6EB41E5A7E7122EA /* ARCampaign.xcconfig */,
+				FB9B3918ED1750C990327FA2D18ECC79 /* ARCampaign-dummy.m */,
+				0CB179CE38BCB7D06E86D648A6ABA12D /* ARCampaign-prefix.pch */,
+				633771837A2D3C8BFB66EDBC03EFD8A5 /* ARCampaign-umbrella.h */,
+				A71ACB158BC4EBA4C8D11CD78309FC74 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ARCampaign";
+			sourceTree = "<group>";
+		};
+		F3FB7EC3CF15483652A74B60AC16434A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E1530415A5F306CD70B3836ECA3FA98E /* ARKit.framework */,
+				E50563740C09047AA59D7726D17D2B3B /* Foundation.framework */,
+				E4E4EC11BC1F51C7228C6316B18A1729 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4BBCA0B00A5F3F0728EE9EDF8BE37C54 /* Headers */ = {
+		1DEF1FF07ED0AF4BD3E0C5D7F974769D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDDB6DB3D32CE0D0047B7640549F85C6 /* Pods-ARCampaign_Example-umbrella.h in Headers */,
+				754B726FC373D73151021CD87FB5A808 /* ARCampaign-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,32 +391,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F171D618CBD29863BD41BF68E49AFFD1 /* Headers */ = {
+		DF91B5D52D28186F861DDD43216BC338 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0389B8C6468627BCE2BD38C5EE01455 /* ARCampaign-umbrella.h in Headers */,
+				A3D935CF2670065738A04560465D3E9D /* crypt.h in Headers */,
+				6C8F71604AABD1BF97BDDFD9B52EA002 /* ioapi.h in Headers */,
+				6741BAF63A2EA4F1CAD07AE9AD148E5E /* unzip.h in Headers */,
+				72C398B4BC42EF4B343B1D2530CE86C3 /* Zip-umbrella.h in Headers */,
+				2A04086E13FFCF6F18BFA0AF9C54F466 /* Zip.h in Headers */,
+				76A51EFD8A67C15684CA6D67F2E85BF8 /* zip.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC266F25F5951733E8DAFF7C79730E71 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8581BF3A560FB1CCF69AFB0DD5A9E9BD /* Pods-ARCampaign_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		03FE5DEDE29F95564868EA84FB5F5592 /* ARCampaign */ = {
+		47D911CB1D47AF9CFACC3DD6B574C5DB /* Pods-ARCampaign_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05F7778C7A6B8F2F60FF963343846930 /* Build configuration list for PBXNativeTarget "ARCampaign" */;
+			buildConfigurationList = F42A0006C02E13D63656A5F941143994 /* Build configuration list for PBXNativeTarget "Pods-ARCampaign_Example" */;
 			buildPhases = (
-				BBFC7EB73981937E6EF3EF1F5C24C0B3 /* Sources */,
-				A7D964B5D25F3419E27DECF3E1C72120 /* Frameworks */,
-				F171D618CBD29863BD41BF68E49AFFD1 /* Headers */,
+				6B4557132A1469D6368BE6DEBA5E4420 /* Sources */,
+				718B08D54AA9A81B611E905B81D1411A /* Frameworks */,
+				FC266F25F5951733E8DAFF7C79730E71 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				092BD3A1DFB9800C1AD344336726F790 /* PBXTargetDependency */,
+				6056ED25B2BA7609C1CE963413C5B1C2 /* PBXTargetDependency */,
 			);
-			name = ARCampaign;
-			productName = ARCampaign;
-			productReference = 42ECCE83A3207D22000FD133D36C1DB3 /* ARCampaign.framework */;
+			name = "Pods-ARCampaign_Example";
+			productName = "Pods-ARCampaign_Example";
+			productReference = 549A2945C3112125C1D5B15DF257845C /* Pods_ARCampaign_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4AC941B6AC4B4A4F6E3C547FFD6B08C3 /* Pods-ARCampaign_Tests */ = {
@@ -292,25 +448,42 @@
 			);
 			name = "Pods-ARCampaign_Tests";
 			productName = "Pods-ARCampaign_Tests";
-			productReference = D3426B96588D1B178CB3E17C35601767 /* Pods_ARCampaign_Tests.framework */;
+			productReference = 20C8E67DE62DADC12CE844F4A0657F32 /* Pods_ARCampaign_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BD6716F67BE3A1A36BF38F67CC4A4F6D /* Pods-ARCampaign_Example */ = {
+		895CEB5171A1ACF18E703563FB97CFA1 /* ARCampaign */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E7225F5417810AD260BB42091F020AFB /* Build configuration list for PBXNativeTarget "Pods-ARCampaign_Example" */;
+			buildConfigurationList = B36FF2A449E9BE893E36966F6B451D26 /* Build configuration list for PBXNativeTarget "ARCampaign" */;
 			buildPhases = (
-				E7937849D2D0757E8E5F373AFFE7AFED /* Sources */,
-				C1176550DF7C4A6A93C0391B82E0BDAD /* Frameworks */,
-				4BBCA0B00A5F3F0728EE9EDF8BE37C54 /* Headers */,
+				0DDE0EDA5822EFA3483D5AFCF8F219B3 /* Sources */,
+				9D4F8925D0F80AC50A24A09DE137066C /* Frameworks */,
+				1DEF1FF07ED0AF4BD3E0C5D7F974769D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7CD95F4685CDD25F94A96547F185B393 /* PBXTargetDependency */,
+				DEFD2AB02F80FB15CCF4F4B58856E435 /* PBXTargetDependency */,
 			);
-			name = "Pods-ARCampaign_Example";
-			productName = "Pods-ARCampaign_Example";
-			productReference = 386002CF234898DCA1544D0F8119B660 /* Pods_ARCampaign_Example.framework */;
+			name = ARCampaign;
+			productName = ARCampaign;
+			productReference = 7B0B39F1223070BDBC12869283D22678 /* ARCampaign.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DD15931B5A41E796944C959D62F70B1C /* Zip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3932B48D268F86A496F18B6E0CD50F1E /* Build configuration list for PBXNativeTarget "Zip" */;
+			buildPhases = (
+				725918F4E81B69EC8532A7439F57D07F /* Sources */,
+				5254D954B8BAFC3432C967C8174F4134 /* Frameworks */,
+				DF91B5D52D28186F861DDD43216BC338 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zip;
+			productName = Zip;
+			productReference = 533DC15262DF1BEB49E683D040C305CE /* Zip.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -321,11 +494,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
-				TargetAttributes = {
-					03FE5DEDE29F95564868EA84FB5F5592 = {
-						LastSwiftMigration = 1010;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -335,18 +503,64 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 07BF96203E0C0B10BA58BAD10EE8547D /* Products */;
+			productRefGroup = BED314C6423ADE03BCFE4A8BDB0364EB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				03FE5DEDE29F95564868EA84FB5F5592 /* ARCampaign */,
-				BD6716F67BE3A1A36BF38F67CC4A4F6D /* Pods-ARCampaign_Example */,
+				895CEB5171A1ACF18E703563FB97CFA1 /* ARCampaign */,
+				47D911CB1D47AF9CFACC3DD6B574C5DB /* Pods-ARCampaign_Example */,
 				4AC941B6AC4B4A4F6E3C547FFD6B08C3 /* Pods-ARCampaign_Tests */,
+				DD15931B5A41E796944C959D62F70B1C /* Zip */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0DDE0EDA5822EFA3483D5AFCF8F219B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CB5E44A8CD6ACD2F3BA3BFCD06460E9 /* ARCampaign-dummy.m in Sources */,
+				FB06CE264865ADE158562D756CCF642F /* ARCampaignApp.swift in Sources */,
+				47E65C78385343266A352365A5020E29 /* ARCampaignError.swift in Sources */,
+				0975AB6A5924B1A03FA50DD3F899CE9F /* CampaignEndpoint.swift in Sources */,
+				D0D156F968BEA97856A3E2B5FE486586 /* CampaignManager.swift in Sources */,
+				1D2AEE9041D4028B808B5408B0C5200A /* Endpoint.swift in Sources */,
+				9202A5C3C52E134F5089B6BDBD1794A8 /* HTTPMethod.swift in Sources */,
+				D7FBC5F29B804F2823A9E0730CAFCCB9 /* HTTPResponseError.swift in Sources */,
+				ACEA26A5634C9425455CCDA5945C1B89 /* MockCampaignManager.swift in Sources */,
+				FB69E01C7BC14FC41BCCD6EB83EE643A /* SCNMaterial+Extension.swift in Sources */,
+				E809EBD9F395E3909028A6B150D27C6B /* SCNNode+Extension.swift in Sources */,
+				59C525CE74E90351A63FF63F54D64C79 /* SimpleARCampaignViewController+ARSCNViewDelegate.swift in Sources */,
+				87A9D0678888BE1A65383CC52CCCC94E /* SimpleARCampaignViewController.swift in Sources */,
+				DABE63FF23C525338FDAF6987CFD3268 /* SimpleARCampaignViewModel.swift in Sources */,
+				5B83479C2F99204BC17BACD9F953A196 /* TrackingImageResponse.swift in Sources */,
+				D2FB5D2059D4DB652F346C14F1283548 /* WebService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B4557132A1469D6368BE6DEBA5E4420 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330A223018254EF5A52B6B6FCBB2EA98 /* Pods-ARCampaign_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		725918F4E81B69EC8532A7439F57D07F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C76B3D1067A1287B679EF97EB1F4E6C /* ioapi.c in Sources */,
+				280B2534AB7D17CB735A8ACF02907A33 /* QuickZip.swift in Sources */,
+				C1511C11519F073F8D7ADD800B0CC997 /* unzip.c in Sources */,
+				B8F3556F7D087C5A8989F0041F1867F4 /* Zip-dummy.m in Sources */,
+				1A62896D77498A15219BDDFC8D5C91B3 /* zip.c in Sources */,
+				F33288901A3D399595D8A5999768836D /* Zip.swift in Sources */,
+				68EC028AFEAB310D81D7B294AF7AB0D3 /* ZipUtilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CE9C00E2C931054F57BD6C9A127496F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -355,39 +569,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BBFC7EB73981937E6EF3EF1F5C24C0B3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4B10C2B12231DD8900C352DF /* ReplaceMe.swift in Sources */,
-				F0EC50781A3E446D43EA33CD31AB8DAE /* ARCampaign-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7937849D2D0757E8E5F373AFFE7AFED /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E8C6630583D6E7B83EFC4D8BA6373FD /* Pods-ARCampaign_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7CD95F4685CDD25F94A96547F185B393 /* PBXTargetDependency */ = {
+		092BD3A1DFB9800C1AD344336726F790 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ARCampaign;
-			target = 03FE5DEDE29F95564868EA84FB5F5592 /* ARCampaign */;
-			targetProxy = C195959E884F98367CF96817AE2D6AD4 /* PBXContainerItemProxy */;
+			target = 895CEB5171A1ACF18E703563FB97CFA1 /* ARCampaign */;
+			targetProxy = 1AF7DAA9A21DAC3F5E208065E0FF6723 /* PBXContainerItemProxy */;
+		};
+		6056ED25B2BA7609C1CE963413C5B1C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Zip;
+			target = DD15931B5A41E796944C959D62F70B1C /* Zip */;
+			targetProxy = 0BDC801365D669252DEA4F9BB12ECDD3 /* PBXContainerItemProxy */;
+		};
+		DEFD2AB02F80FB15CCF4F4B58856E435 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Zip;
+			target = DD15931B5A41E796944C959D62F70B1C /* Zip */;
+			targetProxy = A36EA5ADFF4C869B2806A22E876C101B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		08549F87A96C5AC1E64853AE8F1B006D /* Release */ = {
+		0117AB1752E45F1E9AAE9E47FCF5C251 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C745879B8EF4ECBA64093ADD604C082 /* Pods-ARCampaign_Example.release.xcconfig */;
+			baseConfigurationReference = 933C3CB98B3B553079EDEA573A32B529 /* Pods-ARCampaign_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -399,7 +609,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ARCampaign_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ARCampaign_Example/Pods-ARCampaign_Example.modulemap";
@@ -410,15 +620,15 @@
 				PRODUCT_NAME = Pods_ARCampaign_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */ = {
+		3689957E0025D075A2C0993927F9FE71 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -470,7 +680,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -481,10 +691,11 @@
 			};
 			name = Debug;
 		};
-		55292F5D8CB0BFB77D6849321A373BFD /* Release */ = {
+		38106F4BCA3A891AA6A6E81DCDFACFEE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9868D2F94CD0B6E4029E7E135C61DE39 /* ARCampaign.xcconfig */;
+			baseConfigurationReference = 949D2FCD9DBD209E6EB41E5A7E7122EA /* ARCampaign.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -497,7 +708,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ARCampaign/ARCampaign-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ARCampaign/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ARCampaign/ARCampaign.modulemap";
 				PRODUCT_NAME = ARCampaign;
@@ -513,7 +724,172 @@
 			};
 			name = Release;
 		};
-		827269710C98D60C14D46BC6AF9BF728 /* Release */ = {
+		3A3FFBDBCB5DCD92DBFF2170A3BE0853 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ECA36904BF20E6DBA229818F1A3F67E /* Zip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Zip/Zip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zip/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Zip/Zip.modulemap";
+				PRODUCT_NAME = Zip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3CD4358CFC25B1AEB24E5EFD6D982830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 949D2FCD9DBD209E6EB41E5A7E7122EA /* ARCampaign.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ARCampaign/ARCampaign-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ARCampaign/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ARCampaign/ARCampaign.modulemap";
+				PRODUCT_NAME = ARCampaign;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		538FE40B19D0776E3B3597A9B0398238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 005E5671C0D46C400B962CA7CD151AD9 /* Pods-ARCampaign_Tests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARCampaign_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARCampaign_Tests/Pods-ARCampaign_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ARCampaign_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		86EDFAB88050EF78B4858504ADD38F8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C745879B8EF4ECBA64093ADD604C082 /* Pods-ARCampaign_Example.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARCampaign_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARCampaign_Example/Pods-ARCampaign_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ARCampaign_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D550AA2D706667980CBEFEEFDE463CD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72470A6BAF8F9A1683A7AB0404FFD804 /* Pods-ARCampaign_Tests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARCampaign_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARCampaign_Tests/Pods-ARCampaign_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ARCampaign_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F582AD13A9DE7F131B91568E61E9D1F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -562,7 +938,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
@@ -571,9 +947,9 @@
 			};
 			name = Release;
 		};
-		8A05B08DF7CD2E1FCFA64B90D004EDA5 /* Debug */ = {
+		FDDC72F5580EE75171169659C7ACBD8F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9868D2F94CD0B6E4029E7E135C61DE39 /* ARCampaign.xcconfig */;
+			baseConfigurationReference = 9ECA36904BF20E6DBA229818F1A3F67E /* Zip.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -584,116 +960,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ARCampaign/ARCampaign-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ARCampaign/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Zip/Zip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zip/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ARCampaign/ARCampaign.modulemap";
-				PRODUCT_NAME = ARCampaign;
+				MODULEMAP_FILE = "Target Support Files/Zip/Zip.modulemap";
+				PRODUCT_NAME = Zip;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BE78B6A8848896E44FCF5CBB86868504 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 933C3CB98B3B553079EDEA573A32B529 /* Pods-ARCampaign_Example.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ARCampaign_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ARCampaign_Example/Pods-ARCampaign_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ARCampaign_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E0B429979240C0103B35EB68C27D0710 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 005E5671C0D46C400B962CA7CD151AD9 /* Pods-ARCampaign_Tests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ARCampaign_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ARCampaign_Tests/Pods-ARCampaign_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ARCampaign_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EF87C97282DD2CFA4D8BD9413E37B8F8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72470A6BAF8F9A1683A7AB0404FFD804 /* Pods-ARCampaign_Tests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ARCampaign_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ARCampaign_Tests/Pods-ARCampaign_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ARCampaign_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -704,20 +982,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		05F7778C7A6B8F2F60FF963343846930 /* Build configuration list for PBXNativeTarget "ARCampaign" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8A05B08DF7CD2E1FCFA64B90D004EDA5 /* Debug */,
-				55292F5D8CB0BFB77D6849321A373BFD /* Release */,
+				3689957E0025D075A2C0993927F9FE71 /* Debug */,
+				F582AD13A9DE7F131B91568E61E9D1F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		3932B48D268F86A496F18B6E0CD50F1E /* Build configuration list for PBXNativeTarget "Zip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */,
-				827269710C98D60C14D46BC6AF9BF728 /* Release */,
+				3A3FFBDBCB5DCD92DBFF2170A3BE0853 /* Debug */,
+				FDDC72F5580EE75171169659C7ACBD8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B36FF2A449E9BE893E36966F6B451D26 /* Build configuration list for PBXNativeTarget "ARCampaign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD4358CFC25B1AEB24E5EFD6D982830 /* Debug */,
+				38106F4BCA3A891AA6A6E81DCDFACFEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -725,17 +1012,17 @@
 		E3AA66D95040802669CACEC18C90A9C2 /* Build configuration list for PBXNativeTarget "Pods-ARCampaign_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E0B429979240C0103B35EB68C27D0710 /* Debug */,
-				EF87C97282DD2CFA4D8BD9413E37B8F8 /* Release */,
+				538FE40B19D0776E3B3597A9B0398238 /* Debug */,
+				D550AA2D706667980CBEFEEFDE463CD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E7225F5417810AD260BB42091F020AFB /* Build configuration list for PBXNativeTarget "Pods-ARCampaign_Example" */ = {
+		F42A0006C02E13D63656A5F941143994 /* Build configuration list for PBXNativeTarget "Pods-ARCampaign_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BE78B6A8848896E44FCF5CBB86868504 /* Debug */,
-				08549F87A96C5AC1E64853AE8F1B006D /* Release */,
+				0117AB1752E45F1E9AAE9E47FCF5C251 /* Debug */,
+				86EDFAB88050EF78B4858504ADD38F8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
