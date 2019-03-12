@@ -19,6 +19,18 @@ public class SimpleARCampaignViewController: UIViewController {
         return view
     }()
     
+    lazy var testImageView: UIImageView = {
+        let view = UIImageView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    lazy var tutorialView: TutorialView = {
+        let view = TutorialView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     var model: SCNNode?
     private var modelUrl: URL?
     private let viewModel: SimpleARCampaignViewModel = SimpleARCampaignViewModel()
@@ -28,24 +40,37 @@ public class SimpleARCampaignViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         sceneView.delegate = self
+        sceneView.session.delegate = self
+        sceneView.debugOptions = ARSCNDebugOptions.showFeaturePoints
         setupViews()
     }
     
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        viewModel.fetchProject { (data, url, error)  in
+        
+        viewModel.fetchCampaign { (campaignInfo, imageData, modelUrl, error) in
             if error != nil {
                 guard let error = error as? ARCampaignError else { fatalError() }
                 self.presentAlert(campaignError: error)
             } else {
-                guard let imageData = data else { fatalError() }
-                guard let width = self.viewModel.trackingImageWidth else { fatalError() }
+                guard let imageData = imageData else { fatalError() }
+                guard let width = campaignInfo?.trackingImageInfo.width else { fatalError() }
                 let image = UIImage(data: imageData)!
                 let arImage = ARReferenceImage(image.cgImage!, orientation: CGImagePropertyOrientation.up, physicalWidth: CGFloat(width))
                 self.customReferenceSet.insert(arImage)
                 self.setupImageTracking()
                 
-                guard let url = url else {
+                /*self.view.addSubview(self.testImageView)
+                NSLayoutConstraint.activate([
+                    self.testImageView.topAnchor.constraint(equalTo: self.view.topAnchor),
+                    self.testImageView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+                    self.testImageView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+                    self.testImageView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+                    ])
+                
+                self.testImageView.image = UIImage(data: imageData)*/
+                
+                guard let url = modelUrl else {
                     self.presentAlert(campaignError: ARCampaignError.localModelUrlMissing)
                     return
                 }
@@ -66,6 +91,13 @@ public class SimpleARCampaignViewController: UIViewController {
             sceneView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             sceneView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
         ])
+        /*self.view.addSubview(tutorialView)
+        NSLayoutConstraint.activate([
+            tutorialView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            tutorialView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            tutorialView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            tutorialView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+        ])*/
     }
     
     public override func viewWillDisappear(_ animated: Bool) {
@@ -78,7 +110,7 @@ public class SimpleARCampaignViewController: UIViewController {
     private func setupImageTracking(){
         let configuration = ARImageTrackingConfiguration()
         configuration.trackingImages = self.customReferenceSet
-        configuration.maximumNumberOfTrackedImages = 1
+        configuration.maximumNumberOfTrackedImages = 4
         self.sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
     }
     
@@ -90,32 +122,3 @@ public class SimpleARCampaignViewController: UIViewController {
     }
     
 }
-
-/*
- let campaignVC = ARCampaignViewController()
- campaignVC.config(campaignName: "julekampanje")
- campaingVC.detectHandler = {
- 
- }
- 
- let vc = ViewController()
- present(vc)
- }
- 
- import ARKit
- class ÆCampaignVC: ViewController, ARSCNViewDelegate {
- 
- override func viewDidAppear(_ animated: Bool) {
- ARCampaignManager.triggerImage ( images, error ) {
- let config = ARImageTrackingConfiguration().trackingImages = images
- config.run()
- }
- }
- 
- func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
- ARCampagnManager.modelForWinner{
- modelNode.childNode(withName: "ship")
- }
- }
- 
- */

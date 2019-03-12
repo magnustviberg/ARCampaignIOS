@@ -19,8 +19,13 @@ extension Endpoint {
     
     func requestforEndpoint(_ path: String, baseURL: URL? = nil) throws -> URLRequest{
         let baseURL = baseURL ?? baseUrl
-        guard let url = URL(string: path, relativeTo: baseURL),
-            let urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true) else{
+        print(path)
+        print(baseURL)
+        guard let url = URL(string: path, relativeTo: baseURL) else {
+            fatalError()
+        }
+        
+        guard let urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true) else{
                 fatalError("invalid URL")
         }
         
@@ -28,9 +33,9 @@ extension Endpoint {
             fatalError("invalid URL")
         }
         
-        var request            = URLRequest(url: componentURL)
-        request.httpBody    = body
-        request.httpMethod    = httpMethod.rawValue
+        var request             = URLRequest(url: componentURL)
+        request.httpBody        = body
+        request.httpMethod      = httpMethod.rawValue
         
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         print(request.allHTTPHeaderFields ?? "Could not print the HTTP header fields of the receiver")

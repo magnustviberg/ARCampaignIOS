@@ -14,6 +14,7 @@ enum ARCampaignError: Error {
     case missingAPIKey
     case missingCampaignId
     case missingPlist
+    case missingConfiguration
     case localModelUrlMissing
     case unableToCreateModelFromURL
     case unzipFromURLFailed
@@ -37,6 +38,8 @@ extension ARCampaignError: LocalizedError {
             return "No campaign id in the plist"
         case .missingPlist:
             return "Could not find a ARCampaign.plist"
+        case .missingConfiguration:
+            return "ARCampaignApp has not been configured yet"
         case .localModelUrlMissing:
             return "Missing local model URL"
         case .unableToCreateModelFromURL:
@@ -56,6 +59,8 @@ extension ARCampaignError: LocalizedError {
             return "Check that the Bundle Identifier in the ARCampaignInfo.plist is the same as for the project"
         case .missingPlist:
             return "Download the ARCampaign.plist file from Https://something.no, and add it to the project"
+        case .missingConfiguration:
+            return "Call ARCampaignApp.configure() in the didFinishLaunchingWithOptions method in AppDelegate"
         case .networkingError(let responseError):
             return responseError.recoverySuggestion
     case .missingBundle, .missingBaseUrl, .missingAPIKey, .missingCampaignId, .localModelUrlMissing, .unableToCreateModelFromURL, .unzipFromURLFailed, .errorWithMessage(_):

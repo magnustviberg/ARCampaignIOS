@@ -8,8 +8,12 @@
 import Foundation
 
 public class MockCampaignManager: CampaignManagerProtocol {
+    func fetchCampaign(completion: @escaping (CampaignInfo?, Data?, URL?, Error?) -> Void) {
+        completion(nil, nil, nil, ARCampaignError.errorWithMessage("no data"))
+    }
+    
     
     public func fetchCampaignInfo(completion: @escaping (Result<CampaignInfo>) -> Void) {
-        completion(Result.success(CampaignInfo(modelURL: "https://api.geit.no/scene", trackingImageInfo: TrackingImageResponse(url: "https://i.imgur.com/k62s9en.jpg", width: 0.13))))
+        completion(Result.failure(ARCampaignError.errorWithMessage("orker ikke implementere dette")))
     }
 }

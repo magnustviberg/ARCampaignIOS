@@ -28,7 +28,7 @@ public enum CampaignEndpoint: Endpoint{
     var request: URLRequest{
         let path: String
         switch self{
-        case .getCampaign: path = "/campaign/:\(String(describing: ARCampaignApp.campaignId))"
+        case .getCampaign: path = "/campaign/\(ARCampaignApp.campaignId!)"
         }
         
         return try! requestforEndpoint(path)

@@ -21,8 +21,10 @@ public class ARCampaignApp {
     static var apiKeyString: String!
     static var campaignId: String!
     
+    static var isConfigured = false
+    
     public static func configure() {
-        if let url = Bundle.main.url(forResource:"ARCampaignInfo", withExtension: "plist") {
+        if let url = Bundle.main.url(forResource: "ARCampaign", withExtension: "plist") {
             do {
                 let data = try Data(contentsOf:url)
                 let infoDictionary = try PropertyListSerialization.propertyList(from: data, format: nil) as! [String:Any]
@@ -44,6 +46,7 @@ public class ARCampaignApp {
                 self.databaseURLString = baseUrl
                 self.apiKeyString = apiKey
                 self.campaignId = campaignId
+                self.isConfigured = true
             } catch (let error) {
                 fatalError(error.localizedDescription)
             }

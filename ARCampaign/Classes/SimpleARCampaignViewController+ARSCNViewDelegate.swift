@@ -11,8 +11,7 @@ import ARKit
 @available(iOS 12.0, *)
 extension SimpleARCampaignViewController: ARSCNViewDelegate {
     
-    private func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        /// Casting down ARAnchor to `ARImageAnchor`.
+    public func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         if let imageAnchor =  anchor as? ARImageAnchor {
             let imageSize = imageAnchor.referenceImage.physicalSize
             
@@ -101,5 +100,19 @@ extension SimpleARCampaignViewController: ARSCNViewDelegate {
     private func sessionInterruptionEnded(_ session: ARSession) {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
         print("Error sessionInterruptionEnded : \(session.debugDescription)")
+    }
+}
+
+@available(iOS 12.0, *)
+extension SimpleARCampaignViewController: ARSessionDelegate {
+    public func session(_ session: ARSession, cameraDidChangeTrackingState camera: ARCamera) {
+        switch camera.trackingState {
+        case .notAvailable:
+            print(".notAvailable")
+        case .limited(_):
+            print("limited")
+        case .normal:
+            print("normal")
+        }
     }
 }

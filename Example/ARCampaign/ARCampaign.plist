@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BaseURL</key>
+	<string>http://e8e979d2.ngrok.io</string>
+	<key>CampaignID</key>
+	<string>e1cq15_arcampaign</string>
+	<key>BundleID</key>
+	<string>no.purpl.ARCampaignExample</string>
+	<key>APIKey</key>
+	<string>rFFksmhYjRLIhKl7zwxLGlWgbh3skPFJ</string>
+</dict>
+</plist>
