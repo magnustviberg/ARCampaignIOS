@@ -19,6 +19,7 @@ public class SimpleARCampaignViewController: UIViewController {
         return view
     }()
     
+    /*
     lazy var testImageView: UIImageView = {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -29,7 +30,7 @@ public class SimpleARCampaignViewController: UIViewController {
         let view = TutorialView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
-    }()
+    }()*/
     
     var model: SCNNode?
     private var modelUrl: URL?
