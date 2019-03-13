@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
         let simpleVC = SimpleARCampaignViewController()
         present(simpleVC, animated: true, completion: nil)
         

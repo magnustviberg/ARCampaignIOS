@@ -19,18 +19,11 @@ public class SimpleARCampaignViewController: UIViewController {
         return view
     }()
     
-    /*
-    lazy var testImageView: UIImageView = {
-        let view = UIImageView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    
-    lazy var tutorialView: TutorialView = {
+    public lazy var tutorialView: UIView = {
         let view = TutorialView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
-    }()*/
+    }()
     
     var model: SCNNode?
     private var modelUrl: URL?
@@ -42,7 +35,6 @@ public class SimpleARCampaignViewController: UIViewController {
         super.viewDidLoad()
         sceneView.delegate = self
         sceneView.session.delegate = self
-        sceneView.debugOptions = ARSCNDebugOptions.showFeaturePoints
         setupViews()
     }
     
@@ -61,16 +53,6 @@ public class SimpleARCampaignViewController: UIViewController {
                 self.customReferenceSet.insert(arImage)
                 self.setupImageTracking()
                 
-                /*self.view.addSubview(self.testImageView)
-                NSLayoutConstraint.activate([
-                    self.testImageView.topAnchor.constraint(equalTo: self.view.topAnchor),
-                    self.testImageView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-                    self.testImageView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-                    self.testImageView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
-                    ])
-                
-                self.testImageView.image = UIImage(data: imageData)*/
-                
                 guard let url = modelUrl else {
                     self.presentAlert(campaignError: ARCampaignError.localModelUrlMissing)
                     return
@@ -80,6 +62,11 @@ public class SimpleARCampaignViewController: UIViewController {
                     return
                 }
                 self.model = model
+                UIView.animate(withDuration: 0.5, delay: 3.0, options: UIView.AnimationOptions.curveEaseInOut, animations: {
+                    self.tutorialView.alpha = 0
+                }, completion: { (_) in
+                    self.tutorialView.isHidden = true
+                })
             }
         }
     }
@@ -92,13 +79,13 @@ public class SimpleARCampaignViewController: UIViewController {
             sceneView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             sceneView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
         ])
-        /*self.view.addSubview(tutorialView)
+        self.view.addSubview(tutorialView)
         NSLayoutConstraint.activate([
             tutorialView.topAnchor.constraint(equalTo: self.view.topAnchor),
             tutorialView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             tutorialView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             tutorialView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
-        ])*/
+        ])
     }
     
     public override func viewWillDisappear(_ animated: Bool) {
@@ -111,7 +98,7 @@ public class SimpleARCampaignViewController: UIViewController {
     private func setupImageTracking(){
         let configuration = ARImageTrackingConfiguration()
         configuration.trackingImages = self.customReferenceSet
-        configuration.maximumNumberOfTrackedImages = 4
+        configuration.maximumNumberOfTrackedImages = self.customReferenceSet.count
         self.sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
     }
     

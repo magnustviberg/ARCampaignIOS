@@ -20,6 +20,7 @@
 		4341673AD3892508F7EB92E4C56AFB53 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1530415A5F306CD70B3836ECA3FA98E /* ARKit.framework */; };
 		47E65C78385343266A352365A5020E29 /* ARCampaignError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214749C2A07815CD4E711BC8DB9261DA /* ARCampaignError.swift */; };
 		4B10C2FB2235BE8400C352DF /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B10C2FA2235BE8400C352DF /* TutorialView.swift */; };
+		4B24386E2238F8A8009ADAD6 /* CampaignInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B24386D2238F8A8009ADAD6 /* CampaignInfo.swift */; };
 		59C525CE74E90351A63FF63F54D64C79 /* SimpleARCampaignViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8B6D89F0EA80B2BD82E39C776C4F1A /* SimpleARCampaignViewController+ARSCNViewDelegate.swift */; };
 		5B83479C2F99204BC17BACD9F953A196 /* TrackingImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE0C931573DDF9D88D79DC2FBA6200 /* TrackingImageResponse.swift */; };
 		6741BAF63A2EA4F1CAD07AE9AD148E5E /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = F93371BCFC6F7AC0C89752E99B0C343C /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -94,6 +95,7 @@
 		42F7F96FB856AD9E1875BB17DF102A02 /* ARCampaign.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ARCampaign.modulemap; sourceTree = "<group>"; };
 		4B10A75B71F330BBCE507C22D76FB887 /* Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B10C2FA2235BE8400C352DF /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		4B24386D2238F8A8009ADAD6 /* CampaignInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CampaignInfo.swift; path = ARCampaign/Classes/CampaignInfo.swift; sourceTree = "<group>"; };
 		4C7E80479CD50FB114C953F51822D6E5 /* Pods-ARCampaign_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARCampaign_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4CBA5909677A6245EB5781459CAD561E /* Zip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zip-dummy.m"; sourceTree = "<group>"; };
 		500E66D78722297A5F9E212E84C9BEEE /* SCNMaterial+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SCNMaterial+Extension.swift"; path = "ARCampaign/Classes/SCNMaterial+Extension.swift"; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				6305A6D6A2DCFFF253712063F0E2D744 /* SimpleARCampaignViewModel.swift */,
 				4B10C2FA2235BE8400C352DF /* TutorialView.swift */,
 				6EDE0C931573DDF9D88D79DC2FBA6200 /* TrackingImageResponse.swift */,
+				4B24386D2238F8A8009ADAD6 /* CampaignInfo.swift */,
 				9EF789AD4EAD6F8A05B8C700984FAC58 /* WebService.swift */,
 				B69E5591B62CA28BD83E4C21342989BE /* Pod */,
 				E852262396688CAD44D85C5ECF4CC521 /* Support Files */,
@@ -539,6 +542,7 @@
 				DABE63FF23C525338FDAF6987CFD3268 /* SimpleARCampaignViewModel.swift in Sources */,
 				5B83479C2F99204BC17BACD9F953A196 /* TrackingImageResponse.swift in Sources */,
 				D2FB5D2059D4DB652F346C14F1283548 /* WebService.swift in Sources */,
+				4B24386E2238F8A8009ADAD6 /* CampaignInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

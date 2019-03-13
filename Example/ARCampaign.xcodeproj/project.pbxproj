@@ -10,7 +10,7 @@
 		1393A0C327D90DB3EFAF6B88 /* Pods_ARCampaign_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE7A89BB7D6149A301A894A /* Pods_ARCampaign_Example.framework */; };
 		4B10C2F5223266D300C352DF /* ARCampaign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B10C2F4223266D300C352DF /* ARCampaign.framework */; };
 		4B10C2F7223266D300C352DF /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B10C2F6223266D300C352DF /* Zip.framework */; };
-		4B10C2FF2235C9C200C352DF /* ARCampaign.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B10C2FE2235C9C200C352DF /* ARCampaign.plist */; };
+		4B24387022392536009ADAD6 /* ARCampaignInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B24386F22392536009ADAD6 /* ARCampaignInfo.plist */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -37,7 +37,7 @@
 		4267BF7D49E95EB8B8F64616 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4B10C2F4223266D300C352DF /* ARCampaign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ARCampaign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B10C2F6223266D300C352DF /* Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B10C2FE2235C9C200C352DF /* ARCampaign.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ARCampaign.plist; sourceTree = "<group>"; };
+		4B24386F22392536009ADAD6 /* ARCampaignInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ARCampaignInfo.plist; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ARCampaign_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARCampaign_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -127,8 +127,8 @@
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				4B10C2FE2235C9C200C352DF /* ARCampaign.plist */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				4B24386F22392536009ADAD6 /* ARCampaignInfo.plist */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for ARCampaign";
@@ -261,7 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				4B10C2FF2235C9C200C352DF /* ARCampaign.plist in Resources */,
+				4B24387022392536009ADAD6 /* ARCampaignInfo.plist in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);

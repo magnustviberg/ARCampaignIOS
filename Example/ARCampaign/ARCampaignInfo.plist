@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>BaseURL</key>
-	<string>http://e8e979d2.ngrok.io</string>
+	<string>https://ar.purpl.dev</string>
 	<key>CampaignID</key>
-	<string>e1cq15_arcampaign</string>
+	<string>jdunjx_example-project</string>
 	<key>BundleID</key>
 	<string>no.purpl.ARCampaignExample</string>
 	<key>APIKey</key>
-	<string>rFFksmhYjRLIhKl7zwxLGlWgbh3skPFJ</string>
+	<string>jfmgD5n2OiCbPdIJQZtPFq9rLgbT6XQg</string>
 </dict>
 </plist>

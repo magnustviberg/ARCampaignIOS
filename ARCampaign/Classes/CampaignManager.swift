@@ -8,14 +8,11 @@
 import Foundation
 import Zip
 
-public struct CampaignInfo: Codable {
-    let modelURL: String
-    let trackingImageInfo: TrackingImageResponse
-}
-
-protocol CampaignManagerProtocol {
-    func fetchCampaignInfo(completion: @escaping (Result<CampaignInfo>) -> Void)
+public protocol CampaignManagerProtocol {
     func fetchCampaign(completion: @escaping (CampaignInfo?, Data?, URL?, Error?) -> Void)
+    func fetchCampaignInfo(completion: @escaping (Result<CampaignInfo>) -> Void)
+    func fetchTrackingImage(from url: URL, completion: @escaping (Data?, Error?) -> Void)
+    func fetchModel(from url: URL, completion: @escaping (URL?, Error?) -> Void)
 }
 
 public class CampaignManager: CampaignManagerProtocol {
@@ -25,7 +22,7 @@ public class CampaignManager: CampaignManagerProtocol {
     private var fetchedModelError: Error?
     private var fetchedModelURL: URL?
     
-    init() {
+    public init() {
         guard ARCampaignApp.isConfigured else { fatalError(ARCampaignError.missingConfiguration.errorMessage)}
     }
     
@@ -94,20 +91,24 @@ public class CampaignManager: CampaignManagerProtocol {
     }
     
     func fetchTrackingImage(from urlString: String?, completion: @escaping (Data?, Error?) -> Void) {
-        let session = URLSession(configuration: .default)
-        guard let urlString = urlString else {
-            fatalError()
-        }
-        
+        guard let urlString = urlString else { fatalError() }
         let newString = urlString.replacingOccurrences(of: "http://localhost:8000", with: "http://e8e979d2.ngrok.io")
         
         guard let url = URL(string: newString) else {
             completion(nil, HTTPResponseError.responseErrorWith(message: "ERROR: Could not make URL from urlString"))
             return
         }
+        
+        fetchTrackingImage(from: url) { (data, error) in
+            completion(data, error)
+        }
+    }
+    
+    public func fetchTrackingImage(from url: URL, completion: @escaping (Data?, Error?) -> Void) {
+        let session = URLSession(configuration: .default)
         let downloadPicTask = session.dataTask(with: url) { (data, response, error) in
-            if let e = error {
-                completion(nil, e)
+            if let error = error {
+                completion(nil, error)
             } else {
                 if let res = response as? HTTPURLResponse {
                     print("Downloaded picture with response code \(res.statusCode)")
@@ -141,7 +142,7 @@ public class CampaignManager: CampaignManagerProtocol {
         }
     }
     
-    func fetchModel(from url: URL, completion: @escaping (URL?, Error?) -> Void) {
+    public func fetchModel(from url: URL, completion: @escaping (URL?, Error?) -> Void) {
         
         let modelTask = URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let dataResponse = data, error == nil else {

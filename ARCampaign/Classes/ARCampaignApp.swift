@@ -24,7 +24,7 @@ public class ARCampaignApp {
     static var isConfigured = false
     
     public static func configure() {
-        if let url = Bundle.main.url(forResource: "ARCampaign", withExtension: "plist") {
+        if let url = Bundle.main.url(forResource: "ARCampaignInfo", withExtension: "plist") {
             do {
                 let data = try Data(contentsOf:url)
                 let infoDictionary = try PropertyListSerialization.propertyList(from: data, format: nil) as! [String:Any]

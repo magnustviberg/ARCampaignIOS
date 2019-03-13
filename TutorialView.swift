@@ -7,13 +7,13 @@
 
 import UIKit
 
-class TutorialView: UIView {
+public class TutorialView: UIView {
     
     lazy var stackView: UIStackView = {
         let view = UIStackView()
         view.alignment = UIStackView.Alignment.center
         view.distribution = UIStackView.Distribution.fillProportionally
-        view.spacing = 16
+        view.spacing = 32
         view.axis = NSLayoutConstraint.Axis.vertical
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -21,26 +21,29 @@ class TutorialView: UIView {
     
     lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 24)
+        label.font = UIFont.boldSystemFont(ofSize: 22)
         label.textColor = .white
         label.text = "Hold the camere towards the image"
+        label.numberOfLines = 0
+        label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     lazy var descriptionLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 24)
+        label.font = UIFont.boldSystemFont(ofSize: 14)
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
-        label.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor est vitae erat dapibus fringilla. Ut a diam fermentum, congue ante sed, sollicitudin ante. Maecenas a placerat turpis. Etiam in neque libero."
+        label.textAlignment = .center
+        label.text = "Once the image is detected the 3D content will be displayed in AR"
         return label
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor.black.withAlphaComponent(0.7)
+        self.backgroundColor = UIColor.black.withAlphaComponent(0.6)
         setupView()
     }
     
