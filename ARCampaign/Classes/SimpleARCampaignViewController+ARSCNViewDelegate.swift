@@ -39,41 +39,15 @@ extension SimpleARCampaignViewController: ARSCNViewDelegate {
             ambientLightNode.light!.color = UIColor.darkGray
             model.addChildNode(ambientLightNode)
             
-            
-            //            shipNode.childNode(withName: "shipMesh", recursively: false)?.geometry = SCNScene(named: "art.scnassets/ship.scn")?.rootNode.childNode(withName: "shipMesh", recursively: true)?.geometry
-            
-            /*
-             shipNode.position.x = imageHightingAnimationNode.position.x
-             shipNode.position.y = imageHightingAnimationNode.position.y
-             shipNode.position.z = imageHightingAnimationNode.position.z
-             shipNode.scale = SCNVector3(0.001, 0.001, 0.001)*/
-            
-            let circle1 = SCNNode(geometry: SCNSphere(radius: 0.01))
-            let rotationNode = SCNNode()
-            rotationNode.position = imageHightingAnimationNode.position
-            circle1.position.x = rotationNode.position.x + 0.125
-            circle1.position.y = rotationNode.position.y
-            circle1.position.z = rotationNode.position.z
-            
-            let circle2 = SCNNode(geometry: SCNSphere(radius: 0.01))
-            circle2.position.x = rotationNode.position.x - 0.125
-            circle2.position.y = rotationNode.position.y
-            circle2.position.z = rotationNode.position.z
-            
-            rotationNode.addChildNode(circle1)
-            rotationNode.addChildNode(circle2)
-            
-            let rotate = SCNAction.rotateBy(x: 0, y: 0, z: 1, duration: 2)
-            let rotateSequence = SCNAction.sequence([rotate])
-            let rotationLoop = SCNAction.repeatForever(rotateSequence)
-            
-            rotationNode.runAction(rotationLoop)
+            model.position.x = imageHightingAnimationNode.position.x
+            model.position.y = imageHightingAnimationNode.position.y
+            model.position.z = imageHightingAnimationNode.position.z + (model.boundingBox.max.z - model.boundingBox.min.z)/2
             
             imageHightingAnimationNode.addChildNode(model)
-            imageHightingAnimationNode.addChildNode(rotationNode)
             
             node.addChildNode(imageHightingAnimationNode)
             
+            /*
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 let alert = UIAlertController(title: "🎉 Gratulerer du vant! 🎉", message: "Skriv inn epostadressen din for å motta premien din😀", preferredStyle: UIAlertController.Style.alert)
                 let action = UIAlertAction(title: "Jippi!", style: UIAlertAction.Style.cancel, handler: { (_) in
@@ -83,7 +57,7 @@ extension SimpleARCampaignViewController: ARSCNViewDelegate {
                 self.present(alert, animated: true, completion: {
                     
                 })
-            }
+            }*/
         }
     }
     

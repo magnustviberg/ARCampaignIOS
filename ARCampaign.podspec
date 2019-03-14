@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ARCampaign'
-  s.version          = '0.1.2'
+  s.version          = '0.1.4'
   s.summary          = 'Create Campaigns using AR for iOS'
 
   s.swift_version    = '4.2'
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Create Campaigns using AR for iOS apps. Install library into project and easly get models and tracking images from a server.
+ARCampaign is an app development platform with tools to help you build Augmented Reality Campaigns into your app.
                        DESC
 
   s.homepage         = 'https://github.com/purplos/ARCampaignIOS'

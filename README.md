@@ -108,8 +108,7 @@ manager.fetchCampaign { (campaignInfo, imageData, modelURL, error) in
 }
 ```
 
-The CampaignManager class also has methods for getting the model, tracking image information separately.
-
+The CampaignManager class also has methods for getting the model and the tracking image information separately.
 
 ## Built With
 
