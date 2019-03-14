@@ -44,6 +44,13 @@ Configure a ARCampaignApp shared instance, typically in your application's appli
 ARCampaignApp.configure()
 ```
 
+Remember to add a NSCameraUsageDescription to your project if you havent already done so. Add the following code into your info.plist file
+
+```xml
+<key>NSCameraUsageDescription</key>
+<string>ARCampaign-Example requires access to your phone’s camera.</string>
+```
+
 ## Usage
 
 With the ARCampaign SDK added to your project you can easly create a SimpleARCampaignViewController or use your own fully customizable UIViewController. 
