@@ -8,8 +8,8 @@
 import Foundation
 
 public struct TrackingImageResponse {
-    var url: String
-    var width: Float32
+    public var url: String
+    public var width: Float32
     
     enum CodingKeys: String, CodingKey {
         case url = "imageURL"

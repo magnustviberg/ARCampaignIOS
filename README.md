@@ -4,8 +4,7 @@ ARCampaign is an app development platform with tools to help you build Augmented
 
 ## Install the SDK
 
-Go to the ARCampaign Console  [ARCampaign](https://ar.purpl.dev) and create a project. 
-Download and drag the ARCampaignInfo.plist file into your XCode project.
+Go to the [ARCampaign Console](https://ar.purpl.dev) and create a project. 
 
 ### Prerequisites
 
@@ -18,7 +17,7 @@ Before you begin, you need a few things set up in your environment:
 
 ### Add the SDK
 
-In the ARCampaign console, click create new project, then enter a Project name.
+Go to the [ARCampaign Console](https://ar.purpl.dev) and create a project, then enter a Project name.
 Enter the bundle identifier from your XCode Project and upload pictures and models.
 Download the plist file and drag it into your XCode Project
 
@@ -47,10 +46,61 @@ ARCampaignApp.configure()
 
 ## Usage
 
+With the ARCampaign SDK added to your project you can easly create a SimpleARCampaignViewController or use your own fully customizable UIViewController. 
+
+### Quick and easy implementation
+
+Initilize an instance of the SimpleARCampaignViewController  and present it. And thats it!
+
 ```
 let simpleVC = SimpleARCampaignViewController()
 present(simpleVC, animated: true, completion: nil)
 ```
+
+You can also replace the default tutorial view with your own UIView. Just make sure to replace the tutorialView on the SimpleARViewController before you present it.
+
+```
+// create an instance of your own subclass of UIView
+let customTutorialView = CustomTutorialView()
+
+// create an instance of the SimpleViewController
+let simpleVC = SimpleARCampaignViewController()
+
+// replace the tutorialView
+simpleVC.tutorialView = customTutorialView
+
+// present 
+present(simpleVC, animated: true, completion: nil)
+```
+
+### Advanced implementation
+
+Create an instance of CampaignManager in your own ViewController and get access to the model, tracking image and image width.
+
+```swift
+let manager = CampaignManager()
+manager.fetchCampaign { (campaignInfo, imageData, modelURL, error) in
+    if error != nil {
+        // Handle error
+    } else {
+        // get the tracking image width
+        guard let width = campaignInfo?.trackingImageInfo.width else { return }
+
+        // get tracking image
+        guard let imageData = imageData else { return }
+        guard let image = UIImage(data: imageData) else { return }
+
+        // create a ARReferenceImage
+        let arImage = ARReferenceImage(image.cgImage!, orientation: CGImagePropertyOrientation.up, physicalWidth: CGFloat(width))
+
+        // get the 3D model
+        guard let url = modelURL else { return }
+        guard let scene = try? SCNScene.init(url: url, options: nil) else { return }
+        let modelNode = scene.rootNode
+    }
+}
+```
+
 
 ## Built With
 

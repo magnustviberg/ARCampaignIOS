@@ -8,7 +8,7 @@
 import Foundation
 
 public struct CampaignInfo: Codable {
-    let modelURL: String
-    let trackingImageInfo: TrackingImageResponse
+    public let modelURL: String
+    public let trackingImageInfo: TrackingImageResponse
 }
 
