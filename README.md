@@ -40,7 +40,7 @@ import ARCampaign
 
 Configure a ARCampaignApp shared instance, typically in your application's application:didFinishLaunchingWithOptions: method:
 
-```
+```swift
 ARCampaignApp.configure()
 ```
 
@@ -52,14 +52,14 @@ With the ARCampaign SDK added to your project you can easly create a SimpleARCam
 
 Initilize an instance of the SimpleARCampaignViewController  and present it. And thats it!
 
-```
+```swift
 let simpleVC = SimpleARCampaignViewController()
 present(simpleVC, animated: true, completion: nil)
 ```
 
 You can also replace the default tutorial view with your own UIView. Just make sure to replace the tutorialView on the SimpleARViewController before you present it.
 
-```
+```swift
 // create an instance of your own subclass of UIView
 let customTutorialView = CustomTutorialView()
 
@@ -100,6 +100,8 @@ manager.fetchCampaign { (campaignInfo, imageData, modelURL, error) in
     }
 }
 ```
+
+The CampaignManager class also has methods for getting the model, tracking image information separately.
 
 
 ## Built With
